@@ -1,0 +1,20 @@
+version: '3'
+
+services: 
+  web:
+    build: .
+    command: gunicorn interview_prep.wsgi:application --bind 0.0.0.0:8000 --workers 3
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+#   db:
+#     image: postgres:11
+#     environment:
+#       - POSTGRES_DB=postgres
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=postgres
+#     volumes:
+#       - pw_tracker:/var/lib/postgresql/data
+# volumes:
+#   pw_tracker:
