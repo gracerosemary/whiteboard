@@ -86,6 +86,8 @@ WSGI_APPLICATION = 'interview_prep.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# Heroku: Update database configuration from $DATABASE_URL.
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
