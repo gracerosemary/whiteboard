@@ -36,6 +36,10 @@ DEBUG = env.bool('DEBUG')
 
 ALLOWED_HOSTS = tuple(env.list('ALLOWED_HOSTS'))
 
+CORS_ORIGIN_WHITELIST = tuple(env.list("ALLOWED_ORIGINS"))
+
+CORS_ALLOW_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -91,7 +95,6 @@ WSGI_APPLICATION = 'interview_prep.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'NAME': env('DB_NAME'),
         'USER': env('DB_USER'),
         'PASSWORD': env('DB_PASSWORD'),
@@ -163,6 +166,3 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
 }
-
-CORS_ORIGIN_WHITELIST = tuple(env.list("ALLOWED_ORIGINS"))
-CORS_ALLOW_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")

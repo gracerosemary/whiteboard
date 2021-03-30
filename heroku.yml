@@ -6,5 +6,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  # web: bundle exec puma -C config/puma.rb
   web: gunicorn interview_prep.wsgi:application --bind 0.0.0.0:$PORT
