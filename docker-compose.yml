@@ -15,6 +15,6 @@ services:
 #       - POSTGRES_USER=postgres
 #       - POSTGRES_PASSWORD=postgres
 #     volumes:
-#       - pw_tracker:/var/lib/postgresql/data
+#       - interview:/var/lib/postgresql/data
 # volumes:
-#   pw_tracker:
+#   interview:
