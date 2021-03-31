@@ -17,14 +17,14 @@ Choose your structure, method, action to practice for a whiteboard interview. Ad
 
 ## Getting to deployed site:
 Admin Site: https://wb-interview.herokuapp.com/admin/  
-User credentials: (in submission notes)
-Click 'Whiteboards' to add a new whiteboard!  
+User credentials: (in submission notes)  
+Click 'Whiteboards' to add a new whiteboard!    
 
-Main Site: https://wb-interview.herokuapp.com/api/v1/wb/  
-Expected behavior: ""Authentication credentials were not provided."  
+Main Site: https://wb-interview.herokuapp.com/api/v1/wb/    
+Expected behavior: ""Authentication credentials were not provided."    
 
-Is the site connected properly?
-`$ curl -v https://wb-interview.herokuapp.com/admin/` should display:
+Is the site connected properly?  
+`$ curl -v https://wb-interview.herokuapp.com/admin/` should display:  
 > `< HTTP/1.1 302 Found`
 
 ## Change Log
