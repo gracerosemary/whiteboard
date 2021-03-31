@@ -1,6 +1,6 @@
 # Back End Deployment  
 
-PR Link: 
+PR Link: https://github.com/gracerosemary/whiteboard/pull/2  
 
 **Author**: G Choi   
 **Version**: 1.0.0
